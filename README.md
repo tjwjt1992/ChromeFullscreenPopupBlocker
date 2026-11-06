@@ -2,11 +2,11 @@
 
 **[Download latest release / 下载最新版本](https://github.com/tjwjt1992/ChromeFullscreenPopupBlocker/releases/latest)**
 
-A lightweight, open-source utility that blocks Chromium's recurring “Press
-Esc/F11 to exit fullscreen” popup. Requires Windows 10/11 x64, .NET Framework
+A lightweight, open-source utility that blocks Chromium's recurring
+“To exit full screen, press and hold Esc” popup. Requires Windows 10/11 x64, .NET Framework
 4.8, and an x64 Chromium-based browser.
 
-轻量开源工具，拦截 Chrome 等 Chromium 内核浏览器进入全屏时没完没了的“按 Esc/F11 退出全屏”提示。
+轻量开源工具，拦截 Chrome 等 Chromium 内核浏览器进入全屏时没完没了的“若要退出全屏，请长按Esc”提示。
 需要 Windows 10/11 x64、.NET Framework 4.8 和 x64 版本的浏览器。
 
 ## Usage
