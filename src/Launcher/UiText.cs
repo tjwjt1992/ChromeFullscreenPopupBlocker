@@ -4,6 +4,9 @@ using System.IO;
 using System.Security;
 
 internal static class UiText {
+    public static string AppName {
+        get { return Get("Chrome Fullscreen Popup Blocker", "Chrome全屏提示拦截器"); }
+    }
     static readonly string settingsPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "FullscreenPopupBlocker", "language.txt");
     public static bool IsChinese { get; private set; }
 

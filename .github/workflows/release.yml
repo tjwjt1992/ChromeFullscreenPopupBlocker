@@ -46,9 +46,9 @@ jobs:
           $version = (Get-Content -LiteralPath VERSION -Raw).Trim()
           $releaseArgs = @(
             'release', 'create', $env:RELEASE_TAG,
-            "dist/FullscreenPopupBlocker-$version-x64.zip", 'dist/SHA256SUMS.txt',
+            "dist/FullscreenPopupBlocker-$version-x64.zip",
             '--verify-tag', '--generate-notes',
-            '--title', "Fullscreen Popup Blocker $env:RELEASE_TAG"
+            '--title', "Chrome Fullscreen Popup Blocker $env:RELEASE_TAG"
           )
           if ($version.Contains('-')) { $releaseArgs += '--prerelease' }
           & gh @releaseArgs

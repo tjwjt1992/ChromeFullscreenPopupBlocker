@@ -66,12 +66,12 @@ internal sealed class MainForm : Form {
     void ApplyLanguage() {
         SuspendLayout();
         Font = UiText.IsChinese ? chineseFont : englishFont;
-        Text = UiText.Get("Fullscreen Popup Blocker (x64)", "全屏提示拦截器 (x64)");
+        Text = UiText.AppName;
         attach.Text = current == null ? UiText.Get("Attach", "连接") : UiText.Get("Detach", "断开");
         refresh.Text = UiText.Get("Refresh", "刷新");
         pause.Text = UiText.Get("Enabled", "启用拦截");
         hint.Text = UiText.Get("Minimize to tray. Closing this window stops blocking.", "最小化后驻留托盘，关闭窗口将停止拦截。");
-        tray.Text = UiText.Get("Fullscreen Popup Blocker", "全屏提示拦截器");
+        tray.Text = UiText.AppName;
         tray.ContextMenuStrip.Items[0].Text = UiText.Get("Open", "打开");
         tray.ContextMenuStrip.Items[1].Text = UiText.Get("Exit", "退出");
         status.Text = statusText();
