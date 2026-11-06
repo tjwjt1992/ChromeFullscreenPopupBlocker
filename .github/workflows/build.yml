@@ -2,6 +2,8 @@ name: Windows x64 build
 
 on:
   push:
+    branches:
+      - '**'
   pull_request:
   workflow_dispatch:
 

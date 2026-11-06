@@ -31,6 +31,11 @@ with C++**, a Windows SDK, and .NET Framework 4.8. Run from the repository root:
 
 Binaries go to `build/x64/`; the portable ZIP and checksum go to `dist/`.
 
+To publish a release, commit the desired version in `VERSION`, then push a
+matching tag (for example, `git tag v1.0.0` and `git push origin v1.0.0`).
+GitHub Actions builds x64 and publishes the ZIP, checksum, and generated
+release notes. Tags with a suffix such as `v1.1.0-beta.1` create prereleases.
+
 ## 中文说明
 
 拦截 Chromium 浏览器进入全屏时的“按 Esc/F11 退出全屏”提示。
@@ -47,6 +52,10 @@ Binaries go to `build/x64/`; the portable ZIP and checksum go to `dist/`.
 
 编译需要 Visual Studio / Build Tools 2022 或更新版本（安装“使用 C++ 的桌面开发”、
 Windows SDK）及 .NET Framework 4.8，依次运行上方两条命令即可生成程序和压缩包。
+
+发布时先提交 `VERSION` 中的版本号，再推送对应标签（如 `v1.0.0`）。
+GitHub Actions 会自动编译 x64 版本并发布压缩包、校验和及更新说明；
+带后缀的标签（如 `v1.1.0-beta.1`）会发布为预发布版本。
 
 ## License
 
